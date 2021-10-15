@@ -16,5 +16,22 @@
 .inp-nav {
   border: none;
   opacity: 70%;
-  border-radius: 1px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.menu {
+  background-color: #F8F8FF;
+  width: 305px;
+  height: 935px;
+}
+
+.list-menu {
+  list-style-type: none;
+}
+
+.a-menu, .a-menu:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
 }

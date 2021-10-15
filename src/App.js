@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './main';
 
 
 class App extends Component {
@@ -31,7 +32,7 @@ class App extends Component {
                   </div>
                   <div className="col">
                     <button className="btn-nav-plus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" className="bi bi-plus-lg" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" color="white" fill="currentColor" className="bi bi-plus-lg" viewBox="0 0 16 16">
                         <path fillRule="evenodd" clipRule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" fill="#000"/>
                       </svg>
                     </button>
@@ -39,6 +40,7 @@ class App extends Component {
                 </div>
               </div>
             </nav>
+            <Main/>
         </>
     );
   }
