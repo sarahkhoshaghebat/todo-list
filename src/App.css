@@ -8,6 +8,10 @@
   color: white;
 }
 
+.btn-nav-plus{
+  justify-items: end;
+}
+
 .form-nav:hover {
   opacity: 80%;
   border: none;
