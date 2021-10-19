@@ -13,7 +13,23 @@ class Main extends Component {
   }
 
   handleSubmit = (event) => {
+    let newList ={
+        key: UUID(),
+        content: this.state.tempinput,
+        checked: false
+    }  
+    let templist = []
+    if(this.state.list) {
+        templist = this.state.list
+    }
+    templist.push(newList)
+    this.setState({
+        list: templist,
+        templist:''
+    })
+    
     event.preventDefault()
+    
   }
 
   handleInputChange= (event) => {
