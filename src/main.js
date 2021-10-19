@@ -1,18 +1,19 @@
 import  React,{ Component } from "react";
 import './App.css';
-
+import UUID from "uuid/"
 
 
 class Main extends Component {
   constructor(){
     super()
-      this.state ={
+    this.state ={
+        list:[],
         tempinput:""
-      }    
+    }    
   }
 
-  handleSubmit = () => {
-
+  handleSubmit = (event) => {
+    event.preventDefault()
   }
 
   handleInputChange= (event) => {
