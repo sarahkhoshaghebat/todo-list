@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './main';
-import UUID from "uuid/"
 
 class App extends Component {
   render(){
     return (
-        <>
+        <React.Fragment>
             <nav className="navbar color-nav">
               <div className="container-fluid">
                 <div className="row">
@@ -41,7 +40,7 @@ class App extends Component {
               </div>
             </nav>
             <Main/>
-        </>
+        </React.Fragment>
     );
   }
 }

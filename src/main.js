@@ -1,8 +1,8 @@
 import  React,{ Component } from "react";
 import './App.css';
 import UUID from "uuid/"
-import { v4 as UUID } from 'uuid';
-uuidv4();
+import { v4 as uuid } from 'uuid';
+
 
 
 class Main extends Component {
@@ -42,7 +42,7 @@ class Main extends Component {
 
     render() {
         return(
-            <>
+            <React.Fragment>
                 <div className="container-fluid">
                     <div className="row menu">
                         <div className="col mt-5">
@@ -89,7 +89,7 @@ class Main extends Component {
 
                     </div>
                 </div>
-            </>
+            </React.Fragment>
         );
     }
 }
