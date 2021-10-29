@@ -1,16 +1,18 @@
 import  React,{ Component } from "react";
 import './App.css';
 import UUID from "uuid/"
+import { v4 as UUID } from 'uuid';
+uuidv4();
 
 
 class Main extends Component {
-  constructor(){
+    constructor(){
     super()
     this.state ={
         list:[],
-        tempinput:""
+        tempinput: " "
     }    
-  }
+}
 
   handleSubmit = (event) => {
     let newList ={
