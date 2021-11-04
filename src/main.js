@@ -82,8 +82,13 @@ handleInputChange= (event) => {
                             <div className="col">
                                 <h3>Inbox</h3>
                             </div>
-                            <div className="col">
-
+                            <div className="row">
+                                <div className="col">
+                                    <button>
+                                        <span className="icon_add" aria-hidden="true">
+                                        <svg width="13" height="13"><path d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z" fill="currentColor" fillRule="evenodd"></path></svg></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
