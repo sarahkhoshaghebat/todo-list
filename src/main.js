@@ -14,7 +14,7 @@ class Main extends Component {
     }    
 }
 
-  handleSubmit = (event) => {
+handleSubmit = (event) => {
     let newList ={
         key: UUID(),
         content: this.state.tempinput,
@@ -32,13 +32,13 @@ class Main extends Component {
     
     event.preventDefault()
     
-  }
+}
 
-  handleInputChange= (event) => {
+handleInputChange= (event) => {
     this.setState({
         tempinput: event.target.value
     })
-  }
+}
 
     render() {
         return(
