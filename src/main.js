@@ -82,7 +82,7 @@ class Main extends Component {
                             <div className="col">
                                 <h3>Inbox</h3>
                             </div>
-                            <div>
+                            <div className="col">
 
                             </div>
                         </div>
