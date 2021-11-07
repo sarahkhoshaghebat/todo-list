@@ -39,3 +39,17 @@
   color: black;
   font-size: 15px;
 }
+
+.main-button{
+  border: none;
+  background-color: white;
+}
+
+.main-button:hover {
+  color: #FF4500;
+}
+
+.img-plus-main {
+  margin-right: 2px;
+
+}
