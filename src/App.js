@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './main';
+import Form from "./form";
 
 
 
@@ -42,6 +43,7 @@ class App extends Component {
               </div>
             </nav>
             <Main/>
+            <Form/>
         </React.Fragment>
     );
   }

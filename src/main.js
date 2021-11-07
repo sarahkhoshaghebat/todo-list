@@ -1,5 +1,6 @@
 import  React,{ Component } from "react";
 import './App.css';
+import Form from "./form";
 
 
 class Main extends Component {
@@ -62,6 +63,7 @@ class Main extends Component {
                         </div> 
                     </div>
                 </div>
+                <Form/>
             </React.Fragment>
         );
     }
