@@ -4,6 +4,7 @@ import Form from "./form";
 
 
 class Main extends Component {
+    
     render() {
         return(
             <React.Fragment>
@@ -52,7 +53,7 @@ class Main extends Component {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <button type="button" className="main-button" onClick={() => <Form/>}>
+                                    <button type="button" className="main-button" onClick={() => ''}>
                                         <span className="icon_add" aria-hidden="true">
                                         <svg className="img-plus-main" width="15" height="15"><path d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z" fill="currentColor" fillRule="evenodd"></path></svg></span>
                                         <span>Add task</span>
