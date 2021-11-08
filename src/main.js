@@ -3,9 +3,23 @@ import './App.css';
 import Form from "./form";
 
 
+
 class Main extends Component {
+    constructor() {
+        super();
+        this.state = {
+            showForm: false
+        } ;
+    }
+    show = () => {
+        this.setState({
+        showForm: !this.showForm
+        });
+        
+    }
     
     render() {
+        let form = this.state.showForm ? <Form/> : null;
         return(
             <React.Fragment>
                 <div className="container-fluid">
@@ -53,7 +67,7 @@ class Main extends Component {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <button type="button" className="main-button" onClick={() => ''}>
+                                    <button type="button" className="main-button" onClick={this.show}>
                                         <span className="icon_add" aria-hidden="true">
                                         <svg className="img-plus-main" width="15" height="15"><path d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z" fill="currentColor" fillRule="evenodd"></path></svg></span>
                                         <span>Add task</span>
@@ -62,7 +76,7 @@ class Main extends Component {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    
+                                    {form}
                                 </div>
                             </div>
                         </div> 
