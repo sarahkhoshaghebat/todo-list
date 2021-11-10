@@ -60,7 +60,6 @@ class Form extends Component {
         })
         return(
             <React.Fragment>
-                {list}
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
                     <button type="submit">Add task</button>
