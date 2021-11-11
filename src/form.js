@@ -9,7 +9,7 @@ class Form extends Component {
         super()
             this.state= {
                 tempinput: '',
-                
+                list : []
             }
     }
 
@@ -55,13 +55,26 @@ class Form extends Component {
     }
 
     render() {
-        
+        const list = this.state.list.map((Row) => {
+        return (<ListRow key={Row.Key} id={Row.Key} checked={Row.checked} content={Row.content} handleCheckBoxChange={this.handleCheckBoxUpdate} />)
+        })
         return(
             <React.Fragment>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
-                    <button type="submit">Add task</button>
-                </form>
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <input type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
+                        </div>
+                    </div>
+                    <div className="row mt-3">
+                        <div className="col">
+                            <button type="button" onClick={this.handleSubmit}>Add task</button>
+                        </div>
+                    </div>
+                    <div className="row mt-3">
+                        {list}
+                    </div>
+                </div>
             </React.Fragment>
         );
     }
