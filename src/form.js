@@ -63,12 +63,12 @@ class Form extends Component {
                 <div className="container">
                     <div className="row mt-4">
                         <div className="col">
-                            <input type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
+                            <input className="input-task form-control" type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
                         </div>
                     </div>
                     <div className="row mt-3">
                         <div className="col">
-                            <button type="button" onClick={this.handleSubmit}>Add task</button>
+                            <button className="btn-task" type="button" onClick={this.handleSubmit}>Add task</button>
                         </div>
                     </div>
                     <div className="row mt-3">

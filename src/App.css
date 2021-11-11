@@ -51,5 +51,15 @@
 
 .img-plus-main {
   margin-right: 2px;
+}
 
+.input-task {
+  width: 420px;
+  height: 85px;
+  border-radius: 5px;
+}
+
+.btn-task {
+  border: 1px solid #F8F8FF;
+  border-radius: 5px solid #F8F8FF;
 }
