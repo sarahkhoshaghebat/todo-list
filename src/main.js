@@ -1,6 +1,7 @@
 import  React,{ Component } from "react";
 import './App.css';
 import Form from "./form";
+import ListRow from "./listrow"
 
 
 
@@ -8,7 +9,12 @@ class Main extends Component {
     constructor() {
         super();
         this.state = {
-            showForm: false
+            showForm: false,
+            list : [{
+                key : 'hdhhdh',
+                id : 1256489,
+                content : 'sara'
+            }]
         } ;
     }
     show = () => {
@@ -20,6 +26,9 @@ class Main extends Component {
     
     render() {
         let form = this.state.showForm ? <Form/> : null;
+        const list = this.state.list.map((Row) => {
+        return (<ListRow key={Row.Key} id={Row.Key} checked={Row.checked} content={Row.content} handleCheckBoxChange={this.handleCheckBoxUpdate} />)
+        })
         return(
             <React.Fragment>
                 <div className="container-fluid">
@@ -75,8 +84,9 @@ class Main extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col">
+                                <div className="col mt-3">
                                     {form}
+                                    {list}
                                 </div>
                             </div>
                         </div> 

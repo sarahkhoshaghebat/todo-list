@@ -9,7 +9,7 @@ class Form extends Component {
         super()
             this.state= {
                 tempinput: '',
-                list : []
+                
             }
     }
 
@@ -55,9 +55,7 @@ class Form extends Component {
     }
 
     render() {
-        const list = this.state.list.map((Row) => {
-        return (<ListRow key={Row.Key} id={Row.Key} checked={Row.checked} content={Row.content} handleCheckBoxChange={this.handleCheckBoxUpdate} />)
-        })
+        
         return(
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
