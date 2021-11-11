@@ -61,7 +61,7 @@ class Form extends Component {
         return(
             <React.Fragment>
                 <div className="container">
-                    <div className="row">
+                    <div className="row mt-4">
                         <div className="col">
                             <input type="text" value={this.state.tempinput} onChange={this.hanleInputChange} />
                         </div>
