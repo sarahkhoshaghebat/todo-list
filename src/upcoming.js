@@ -4,11 +4,13 @@ import './App.css';
 class Upcoming extends Component {
     render() {
         return (
-            <>
+            <React.Fragment>
                 <div>
-                    <input type="deta"/>
+                    <input type="date" className="inp-date"/>
                 </div>
-            </>
+            </React.Fragment>
+                
+            
         )
     }
 }

@@ -30,14 +30,23 @@
   height: 935px;
 }
 
+.margin-menu {
+  margin-left: 24px;
+}
+
 .list-menu {
   list-style-type: none;
 }
 
-.a-menu, .a-menu:hover {
-  text-decoration: none;
-  color: black;
+.b-menu {
   font-size: 15px;
+  border: none;
+  background-color: #F8F8FF;
+}
+
+.hover:hover {
+  background-color: #e6e6fa;
+  border-radius: 5px;
 }
 
 .main-button{
@@ -60,6 +69,25 @@
 }
 
 .btn-task {
-  border: 1px solid #F8F8FF;
-  border-radius: 5px solid #F8F8FF;
+  border: 2px solid #FF4500;
+  border-radius: 10px solid #FF4500;
+  background-color: #FF4500;
+  color: white;
+  width: 90px;
+  height: 38px;
+}
+
+.btn-cancel{
+  background-color: white;
+  border-radius: 10px solid white;
+  border: 2px solid #d3d3d3;
+  margin-left: 3px;
+  width: 90px;
+  height: 38px;
+}
+
+.inp-date {
+  border-radius: 3px;
+  border: 1px solid #FF4500;
+
 }
