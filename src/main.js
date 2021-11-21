@@ -12,13 +12,13 @@ class Main extends Component {
     }
     show = () => {
         this.setState({
-        showForm: !this.showForm
+        showForm: !this.state.showForm
         });
-        
+        console.log(this.state.showForm);
     }
     
     render() {
-        let form = this.state.showForm ? <Form/> : null;
+        let form = this.state.showForm ? <Form onClose={this.show}/> : null;
         return(
             <React.Fragment>
                 <div className="container-fluid">

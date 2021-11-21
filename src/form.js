@@ -5,8 +5,8 @@ import { Key } from "react";
 import ListRow from "./listrow";
 
 class Form extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
             this.state= {
                 tempinput: '',
                 list : []
@@ -43,7 +43,6 @@ class Form extends Component {
     handleCheckBoxUpdate = () => {
         this.setState((prevstate) =>{
             let newlist = prevstate.list.map((Row) => {
-                console.log(Row.Key,Key);
                 if(Row.Key === Key) {
                     Row.checked = !Row.checked;
                 }
@@ -55,9 +54,6 @@ class Form extends Component {
         })
     }
 
-    handleClose = () => {
-        
-    }
 
     render() {
         const list = this.state.list.map((Row) => {
@@ -74,7 +70,7 @@ class Form extends Component {
                     <div className="row mt-3">
                         <div className="col">
                             <button className="btn-task" type="button" onClick={this.handleSubmit}>Add task</button>
-                            <button className="btn-cancel ml-5" type="button" onClick={this.handleClose}>Cancel</button>
+                            <button className="btn-cancel ml-5" type="button" onClick={this.props.onClose}>Cancel</button>
                         </div>
                     </div>
                     <div className="row mt-3">
