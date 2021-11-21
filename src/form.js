@@ -4,7 +4,7 @@ import { v4 as UUID } from 'uuid';
 import { Key } from "react";
 import ListRow from "./listrow";
 
-class Form extends Component {
+export default class Form extends Component {
     constructor(props) {
         super(props)
             this.state= {
@@ -15,7 +15,7 @@ class Form extends Component {
 
     handleSubmit =(event) => {
         let newList = {
-            kry : UUID(),
+            key : UUID(),
             content : this.state.tempinput,
             checked : false
         }
@@ -30,8 +30,7 @@ class Form extends Component {
             list: templist,
             tempinput: ''
         })
-        
-        event.preventDfault()
+        event.preventDefault()
     }
 
     hanleInputChange = (event) => {
@@ -40,8 +39,8 @@ class Form extends Component {
         })
     }
 
-    handleCheckBoxUpdate = () => {
-        this.setState((prevstate) =>{
+    handleCheckBoxUpdate = (key) => {
+        this.setState((prevstate) => {
             let newlist = prevstate.list.map((Row) => {
                 if(Row.Key === Key) {
                     Row.checked = !Row.checked;
@@ -83,5 +82,5 @@ class Form extends Component {
 }
 
 
-export default Form;
+
 

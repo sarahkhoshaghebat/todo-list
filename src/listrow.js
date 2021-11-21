@@ -2,7 +2,7 @@ import  React,{ Component } from "react";
 import './App.css';
 
 
-class ListRow extends Component {
+export default class ListRow extends Component {
     render() {
         let x = {};
         if (this.props.checked === true) {
@@ -11,14 +11,15 @@ class ListRow extends Component {
             }
         }
         return(
-            <label style={x}>
-                <div>
-                    <input type="checkbox" checked={this.props.checked} onChange={() => this.props.handleCheckBoxChange(this.props.id)} />
-                    {this.props.content}
-                </div>
-            </label>
+            <div>
+                <label style={x}>
+                    <div>
+                        <input type="checkbox" checked={this.props.checked} onChange={() => this.props.handleCheckBoxChange(this.props.id)} />
+                        {this.props.content}
+                    </div>
+                </label>
+            </div>
         )
     }
 }
 
-export default ListRow;

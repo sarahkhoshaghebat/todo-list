@@ -1,7 +1,7 @@
 import  React,{ Component } from "react";
 import './App.css';
 
-class Upcoming extends Component {
+export default class Upcoming extends Component {
     render() {
         return (
             <React.Fragment>
@@ -15,4 +15,3 @@ class Upcoming extends Component {
     }
 }
 
-export default Upcoming;
