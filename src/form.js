@@ -1,7 +1,6 @@
 import  React,{ Component } from "react";
 import './App.css';
 import { v4 as UUID } from 'uuid';
-import { Key } from "react";
 import ListRow from "./listrow";
 
 export default class Form extends Component {
@@ -42,7 +41,7 @@ export default class Form extends Component {
     handleCheckBoxUpdate = (key) => {
         this.setState((prevstate) => {
             let newlist = prevstate.list.map((Row) => {
-                if(Row.Key === Key) {
+                if(Row.key === key) {
                     Row.checked = !Row.checked;
                 }
                 return Row
@@ -56,7 +55,7 @@ export default class Form extends Component {
 
     render() {
         const list = this.state.list.map((Row) => {
-        return (<ListRow key={Row.Key} id={Row.Key} checked={Row.checked} content={Row.content} handleCheckBoxChange={this.handleCheckBoxUpdate} />)
+        return (<ListRow key={Row.key} id={Row.key} checked={Row.checked} content={Row.content} handleCheckBoxChange={this.handleCheckBoxUpdate} />)
         })
         return(
             <React.Fragment>

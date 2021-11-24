@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './main';
+import Upcoming  from './upcoming'
 
 
 export default class App extends Component {
@@ -41,6 +42,7 @@ export default class App extends Component {
               </div>
             </nav>
             <Main/>
+            
         </React.Fragment>
     );
   }
