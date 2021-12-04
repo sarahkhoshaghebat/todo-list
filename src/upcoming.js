@@ -72,8 +72,6 @@ export default class Upcoming extends Component {
                     </div>
                 </div>
             </React.Fragment>
-                
-            
         )
     }
 }
